@@ -1,0 +1,30 @@
+⚠️ ÖNEMLİ: Xcode lisansı hatası nedeniyle git komutları çalışmıyor.
+
+Önce şu komutu çalıştırın (şifre isteyecek):
+sudo xcodebuild -license accept
+
+Sonra şu komutları sırayla çalıştırın:
+
+cd /Users/arincakyildiz/Desktop/roadnix
+
+# Git repository başlat (eğer başlatılmadıysa)
+git init
+
+# Remote ekle
+git remote add origin https://github.com/arincakyildiz/roadnix.git
+
+# Branch'i main olarak ayarla
+git branch -M main
+
+# Tüm dosyaları ekle
+git add .
+
+# Commit yap
+git commit -m "Initial commit: Roadnix trafik eğitim platformu - README ve repository açıklamaları eklendi"
+
+# GitHub'a push et
+git push -u origin main
+
+ALTERNATİF: push_to_github.sh scriptini çalıştırın:
+bash push_to_github.sh
+
